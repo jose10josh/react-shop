@@ -6,11 +6,18 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "bundle.js",
+    publicPath: "/"
   },
   target: "web",
   resolve: {
     extensions: ['.js', '.jsx'],
+    alias: {
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@styles': path.resolve(__dirname, 'src/styles'),
+      '@containers': path.resolve(__dirname, 'src/containers'),
+      '@pages': path.resolve(__dirname, 'src/pages'),
+    }
   },
   module: {
     rules: [
@@ -27,7 +34,7 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(css|scss)$/,
         use: [
           // Creates `style` nodes from JS strings
           "style-loader",
@@ -53,5 +60,6 @@ module.exports = {
       directory: path.join(__dirname, 'dist'),
     },
     watchFiles: path.join(__dirname, './**'),
+    historyApiFallback: true,
   },
 }
