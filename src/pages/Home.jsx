@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '@containers/ProductList';
+import ProductList from '@containers/ProductList';
 
 class Home extends Component {
   render() {
