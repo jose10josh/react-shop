@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import Header from '@components/Header';
+import Header from '@containers/ProductList';
 
 class Home extends Component {
   render() {
     return (
-      <Header/>
+      <>
+			  <ProductList />
+		  </>
     );
   }
 }
