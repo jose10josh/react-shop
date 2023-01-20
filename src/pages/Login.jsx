@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+
+import logo from "@logos/logo_yard_sale.svg";
+
 import "@styles/Login.scss";
 
 class Login extends Component {
@@ -6,7 +9,7 @@ class Login extends Component {
     return (
       <div className="Login">
         <div className="Login-container">
-          <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
+          <img src={logo} alt="logo" className="logo" />
           <form action="/" className="form">
             <label htmlFor="email" className="label">Email address</label>
             <input

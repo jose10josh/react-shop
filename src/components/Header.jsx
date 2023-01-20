@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
+
+import logo from "@logos/logo_yard_sale.svg";
+import menuIcon from "@icons/icon_menu.svg";
+import shoppinCart from "@icons/icon_shopping_cart.svg";
+
 import '@styles/Header.scss'
 
 class Header extends Component {
   render() {
     return (
       <nav>
-        <img src="./icons/icon_menu.svg" alt="menu" className="menu" />
+        <img src={menuIcon} alt="menu" className="menu" />
         <div className="navbar-left">
-          <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
+          <img src={logo} alt="logo" className="nav-logo" />
           <ul>
             <li>
               <a href="/">All</a>
@@ -33,7 +38,7 @@ class Header extends Component {
           <ul>
             <li className="navbar-email">platzi@example.com</li>
             <li className="navbar-shopping-cart">
-              <img src="./icons/icon_shopping_cart.svg" alt="shopping cart" />
+              <img src={shoppinCart} alt="shopping cart" />
               <div>2</div>
             </li>
           </ul>

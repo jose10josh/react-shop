@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+
 import OrderItem from "@components/OrderItem";
+import iconFlecha from "./icons/flechita.svg";
+
 import "@styles/MyOrder.scss";
 
 class MyOrder extends Component {
@@ -7,7 +10,7 @@ class MyOrder extends Component {
     return (
       <aside className="MyOrder">
         <div className="title-container">
-          <img src="./icons/flechita.svg" alt="arrow" />
+          <img src={iconFlecha} alt="arrow" />
           <p className="title">My order</p>
         </div>
         <div className="my-order-content">

@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+
+import logo from "@logos/logo_yard_sale.svg";
+
 import "@styles/PasswordRecovery.scss";
 
 class PasswordRecovery extends Component {
@@ -6,7 +9,7 @@ class PasswordRecovery extends Component {
     return (
       <div className="PasswordRecovery">
         <div className="PasswordRecovery-container">
-          <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
+          <img src={logo} alt="logo" className="logo" />
           <h1 className="title">Password recovery</h1>
           <p className="subtitle">Inform the email address used to create your account</p>
           <form action="/" className="form">

@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+
+import addCart from "@icons/bt_add_to_cart.svg";
+
 import "@styles/ProductItem.scss";
 
 class ProductItem extends Component {
@@ -15,7 +18,7 @@ class ProductItem extends Component {
             <p>Bike</p>
           </div>
           <figure>
-            <img src="./icons/bt_add_to_cart.svg" alt="" />
+            <img src={addCart} alt="" />
           </figure>
         </div>
       </div>

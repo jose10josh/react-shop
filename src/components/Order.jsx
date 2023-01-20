@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+
+import flecha from "@icons/flechita.svg";
+
 import "@styles/Order.scss";
 
 class Order extends Component {
@@ -10,7 +13,7 @@ class Order extends Component {
           <span>6 articles</span>
         </p>
         <p>$560.00</p>
-        <img src="./icons/flechita.svg" alt="arrow" />
+        <img src={flecha} alt="arrow" />
       </div>
     );
   }

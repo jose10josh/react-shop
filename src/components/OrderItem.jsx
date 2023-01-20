@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+
+import close from "@icons/icon_close.png";
+
 import '@styles/OrderItem.scss';
 
 class OrderItem extends Component {
@@ -13,7 +16,7 @@ class OrderItem extends Component {
         </figure>
         <p>Bike</p>
         <p>$30,00</p>
-        <img src="./icons/icon_close.png" alt="close" />
+        <img src={close} alt="close" />
       </div>
     );
   }

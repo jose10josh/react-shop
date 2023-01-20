@@ -1,10 +1,11 @@
-import React, { Component } from "react";
+import React from 'react';
 import '@styles/Menu.scss';
 
-class Menu extends Component {
-  render() {
-    return (
-      <div className="Menu">
+
+
+const Menu = () => {
+  return (
+    <div className="Menu">
         <ul>
           <li>
             <a href="/" className="title">My orders</a>
@@ -17,8 +18,7 @@ class Menu extends Component {
           </li>
         </ul>
       </div>
-    );
-  }
-}
+  );
+};
 
 export default Menu;
