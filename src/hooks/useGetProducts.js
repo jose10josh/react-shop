@@ -9,7 +9,6 @@ const useGetProducts = () => {
   const fetchData = async () => {
     const response = await axios(`${API}/products`);
     setProducts(response.data);
-    console.log(response.data)
   }
 
   useEffect(() => {
