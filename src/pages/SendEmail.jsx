@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import iconEmail from "./icons/email.svg";
+import iconEmail from "@icons/email.svg";
 import logo from "@logos/logo_yard_sale.svg";
 
 import "@styles/SendEmail.scss";
