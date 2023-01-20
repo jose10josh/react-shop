@@ -1,31 +1,18 @@
-import React, { useState, useEffect } from "react";
-import axios from 'axios';
+import React from "react";
 
 import ProductItem from "@components/ProductItem";
+import useGetProducts from "@hooks/useGetProducts";
 
 import "@styles/ProductList.scss";
 
-const API = process.env.API;
-
 const ProductList = () => {
-  const [products, setProducts] = useState([]);
-
-
-  const fetchData = async () => {
-    const response = await axios(`${API}/products`);
-    setProducts(response.data);
-    console.log("Loaded")
-  }
-
-  useEffect(() => {
-    fetchData();
-  }, [])
+  const products = useGetProducts()
 
   return (
     <section className="main-container">
       <div className="ProductList">
         {products.map(product => {
-          return <ProductItem />
+          return <ProductItem product={product} key={product.id} />
         })}
       </div>
     </section>

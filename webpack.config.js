@@ -20,6 +20,7 @@ module.exports = {
       '@pages': path.resolve(__dirname, 'src/pages/'),
       '@icons': path.resolve(__dirname, 'src/assets/icons/'),
       '@logos': path.resolve(__dirname, 'src/assets/logos/'),
+      '@hooks': path.resolve(__dirname, 'src/hooks/'),
     }
   },
   module: {
@@ -64,10 +65,10 @@ module.exports = {
     new Dotenv(),
   ],
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist'),
-    },
+    static: false,
     watchFiles: path.join(__dirname, './**'),
     historyApiFallback: true,
+    compress: true,
+    port: 8080,
   },
 }
