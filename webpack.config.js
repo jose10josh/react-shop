@@ -11,17 +11,18 @@ module.exports = {
     publicPath: "/"
   },
   target: "web",
+  mode: "production",
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      '@components': path.resolve(__dirname, 'src/components/'),
-      '@styles': path.resolve(__dirname, 'src/styles/'),
-      '@containers': path.resolve(__dirname, 'src/containers/'),
-      '@pages': path.resolve(__dirname, 'src/pages/'),
-      '@icons': path.resolve(__dirname, 'src/assets/icons/'),
-      '@logos': path.resolve(__dirname, 'src/assets/logos/'),
-      '@hooks': path.resolve(__dirname, 'src/hooks/'),
-      '@context': path.resolve(__dirname, 'src/context/'),
+      '@components': path.resolve(__dirname, './src/components/'),
+      '@styles': path.resolve(__dirname, './src/styles/'),
+      '@containers': path.resolve(__dirname, './src/containers/'),
+      '@pages': path.resolve(__dirname, './src/pages/'),
+      '@icons': path.resolve(__dirname, './src/assets/icons/'),
+      '@logos': path.resolve(__dirname, './src/assets/logos/'),
+      '@hooks': path.resolve(__dirname, './src/hooks/'),
+      '@context': path.resolve(__dirname, './src/context/'),
     }
   },
   module: {
