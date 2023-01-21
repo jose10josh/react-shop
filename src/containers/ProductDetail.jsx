@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import ProductInfo from "@components/ProductInfo";
-import iconClose from "./icons/icon_close.png";
+import iconClose from "@icons/icon_close.png";
 
 import "@styles/ProductDetail.scss";
 
