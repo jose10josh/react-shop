@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 import logo from "@logos/logo_yard_sale.svg";
 
-import "@styles/Login.scss";
+import "@styles/login.scss";
 
 const Login = () => {
   const form = useRef(null);
